@@ -1,0 +1,22 @@
+2018-01-10
+关于mysql 
+
+(case
+when status == 1  then
+'通过'
+when status == 2  then
+'失败'
+else
+'不着调'
+end) as statusMask
+
+
+
+
+(CASE
+	when uptime > unix_timestamp(now()) THEN
+		'已经截止报名'
+	ELSE
+		'活动正在报名'
+	end
+	) as uptimeinfo
